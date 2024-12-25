@@ -8,13 +8,13 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body>
-    <header class="text-center my-4">
-        <h1>Sign in</h1>
+<body class="container vh-100 d-flex flex-column justify-content-center align-items-center">
+    <header class="text-center my-5 ">
+        <p id="header" >Sign in</p>
     </header>
 
-    <main class="container">
-        <form action="/submit" method="POST">
+    <main class=" text-light rounded h-75 w-md-50 d-flex flex-column justify-content-center align-items-center">
+        <form action="/submit" method="POST" class=" p-5 rounded w-75">
             <div class="form-group">
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" class="form-control" required minlength="3">
@@ -23,8 +23,35 @@
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" class="form-control" required>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="w-100 d-flex justify-content-center">
+
+                <button type="submit" class="btn btn-primary rounded  ">Submit</button>
+            </div>
         </form>
+        <style>
+            input:focus:invalid{
+                border: 1px solid red;
+            }
+            #header{
+                font-size: 5rem;
+                font-weight: bold;
+                color: transparent;
+                background: linear-gradient(45deg, #050505, #e63407);
+                -webkit-background-clip: text;
+                text-shadow: 0 0 5px rgba(204, 9, 9, 0.5);
+
+               
+            }
+            body{
+                background: url('https://imgs.search.brave.com/_ZnfvlfjAY2JSBIaZkIw1L3Qznhmu1RbBSpb7POPEeA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDI3NTc4/MzQuZ2lm.gif');
+                background-size: cover;
+            }
+            form{
+                scale: 1.5;
+                background: linear-gradient(45deg, #ff0000, #05a3d3);
+                box-shadow: 0 0 10px 5px rgba(252, 252, 252, 0.5);
+            }
+        </style>
     </main>
 
     <footer class="text-center my-4">
