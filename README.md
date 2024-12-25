@@ -42,7 +42,7 @@ Before you begin, ensure you have the following installed on your system:
     - Add your local machine’s IP address to the **Network Access** IP Whitelist in MongoDB Atlas.
     - Update the `main.go` file with your MongoDB Atlas connection string:
     ```go
-    connectionString := "mongodb+srv://<username>:<password>@cluster0.lpuxv.mongodb.net/testdb?retryWrites=true&w=majority"
+    const MongoDBLink = "mongodb+srv://<username>:<password>@cluster0.lpuxv.mongodb.net/testdb?retryWrites=true&w=majority"
     ```
 
 4. **Create `go.mod` file**:
