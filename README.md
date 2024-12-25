@@ -1,4 +1,4 @@
-# SignIn  Web Application
+# Signup  Web Application
 
 This is a simple web application built using **Go**, **Fiber**, and **MongoDB Atlas**. It allows users to sign up by entering a username and password, and the user data is stored in a MongoDB Atlas database.
 
