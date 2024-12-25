@@ -42,7 +42,7 @@ Before you begin, ensure you have the following installed on your system:
     - Add your local machine’s IP address to the **Network Access** IP Whitelist in MongoDB Atlas.
     - Update the `main.go` file with your MongoDB Atlas connection string:
     ```go
-    const MongoDBLink = "mongodb+srv://<username>:<password>@cluster0.lpuxv.mongodb.net/testdb?retryWrites=true&w=majority"
+    const MongoDBLink = "mongodb+srv://<username>:<password>@cluster0.lpuxv.mongodb.net/testdb"
     ```
 
 4. **Create `go.mod` file**:
@@ -67,7 +67,7 @@ Before you begin, ensure you have the following installed on your system:
 2. The application will start a web server on `http://localhost:4000`.
 
 3. Open your browser and navigate to `http://localhost:4000` to view the sign-in form.
-
+## Ofcourse you can change the database and collection no issue in that
 4. Fill out the form with a username and password, and click **Submit**. This will store the user data in the `testdb` database under the `users` collection.
 
 ## How it Works
