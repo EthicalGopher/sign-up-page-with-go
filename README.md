@@ -22,10 +22,7 @@ Before you begin, ensure you have the following installed on your system:
 ## Installation
 
 1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/your-username/signin-signout-go.git
-    cd signin-signout-go
-    ```
+ 
 
 2. **Install dependencies**:
     You will need to install the required Go packages:
